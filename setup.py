@@ -4,6 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
+    install_requires = ['requests','lxml'],
     name="cfn_man",
     version="0.0.1",
     author="Steven Miller",
