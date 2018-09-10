@@ -2,6 +2,8 @@
 
 # Author: Steven Miller
 
+# TODO: move code out of init file
+
 import requests
 import urllib
 import sys
