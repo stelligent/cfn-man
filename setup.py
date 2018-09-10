@@ -11,7 +11,7 @@ setuptools.setup(
     description="man pages for cloud formation",
     entry_points={
         'console_scripts': [
-            'cfn_man = cfn_man:main',
+            'cfn-man = cfn_man:main',
     ],
     },
     long_description=long_description,
