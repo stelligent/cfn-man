@@ -6,7 +6,7 @@ Look up cloud formation docs from command line.
 
 ```
 # TODO: upload to PyPi
-pip install https://github.com/stelligent/cfn-man.git
+pip install git+https://github.com/stelligent/cfn-man.git
 ```
 
 ## Examples
