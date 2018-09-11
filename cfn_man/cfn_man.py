@@ -15,11 +15,13 @@ import pydoc
 
 
 def build_search_url(query):
-    """
-    Build Google URL with 'I'm Feeling Lucky'
-    Limit results to docs.aws.amazon.com
-    Prepend 'aws cloudformation' to the search
-    Append the argument as the search query
+    """ Builds a Google search url
+
+    Args:
+        query (str): a query string to use when searching cloudformation docs
+
+    Returns:
+        str: the Google 'I'm feeling lucky' URL
     """
     google_url = []
     # Build URL to query Google
@@ -39,11 +41,13 @@ def build_search_url(query):
 
 
 def get_docs_html_content(url):
-    """
-    Given an aws cloudformation docs URL,
-    get the webpage and parse the HTML
-    extracting the relevant HTML for making
-    a man-page-like document
+    """ Get a webpage and extract relevant HTML for cloudformation documentation
+
+    Args:
+        url (str): url for cloudformation docs
+
+    Returns:
+        str: HTML of the page, stripped down to a minimum
     """
     # Relevant tags
     want_tags = ['p', 'h1', 'h2', 'h3', 'div']
@@ -73,11 +77,13 @@ def get_docs_html_content(url):
 
 
 def format_html_content(content):
-    """
-    Given HTML content as a string
-    pass the HTML through the terminal
-    program 'links' to format into
-    a document
+    """ Given HTML, render for reading in a terminal
+
+    Args:
+        content (str): HTML as a string
+
+    Returns:
+        str: Rendered document, all HTML removed using 'links' command line utility
     """
     # Use a random file name to avoid collision
     # for writing temporary file
