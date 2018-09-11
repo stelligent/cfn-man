@@ -5,8 +5,7 @@ Look up cloud formation docs from command line.
 ## Installation
 
 ```
-# TODO: upload to PyPi
-pip install git+https://github.com/stelligent/cfn-man.git
+pip install cfn-man
 ```
 
 ## Examples
