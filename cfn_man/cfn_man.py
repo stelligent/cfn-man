@@ -52,7 +52,7 @@ def get_docs_html_content(url):
     # Relevant classes and ids for div elements
     want_divs = ['variablelist', 'aws-note', 'YAML']
     # Get request to amazon
-    response = requests.get(url)
+    response = requests.get(url, proxies=urllib.getproxies())
     # Parse the raw HTML
     parsed = html.fromstring(response.text)
     # Print out the HTML elements we want

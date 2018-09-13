@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     install_requires = ['requests','lxml'],
     name="cfn_man",
-    version="0.0.1",
+    version="0.0.3",
     author="Steven Miller",
     author_email="sjmiller609@gmail.com",
     description="man pages for cloud formation",
